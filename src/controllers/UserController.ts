@@ -1,21 +1,21 @@
 import { Request, Response } from 'express';
-import { getRepository } from 'typeorm';
-import { User } from '../models/User';
+import { getCustomRepository } from 'typeorm';
+import { UserRepository } from '../repositories/UserRepository';
 
 class UserController {
   async create(req: Request, res: Response) {
     const { name, email } = req.body;
     
     /* permite usar os métodos do getRepository() na entidade "users" */
-    const usersRepository = getRepository(User);
+    const usersRepository = getCustomRepository(UserRepository);
 
     /**
      * Pega todos os usuários que possuem o email mandado
      * Se nenhum usuário for retornado o usuário pode ser cadastrado com tal email
      * 
-     * O que seria em SQL: \ SELECT * FROM USERS WHERE EMAIL = "EMAIL" \
+     * O que seria em SQL: ` SELECT * FROM USERS WHERE EMAIL = "EMAIL" `
      */
-    // 
+
     const userAlreadyExists = await usersRepository.findOne({
       email,
     });

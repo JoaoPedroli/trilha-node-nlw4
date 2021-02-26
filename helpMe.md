@@ -15,3 +15,7 @@
 - 10º command: `yarn typeorm migration:revert`;
 - 11º command: `yarn add uuid`;
 - 12º command: `yarn add @types/uuid -D`;
+
+### Aula 3
+- 13º command: `yarn typeorm migration:create -n CreateSurveys`;
+- 14º command: `yarn typeorm migration:run`;
