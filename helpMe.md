@@ -19,3 +19,13 @@
 ### Aula 3
 - 13º command: `yarn typeorm migration:create -n CreateSurveys`;
 - 14º command: `yarn typeorm migration:run`;
+- 15º command: `yarn add jest @types/jest -D`;
+- 16º command: `yarn jest --init`;
+- --- 1º option: yes;
+- --- 2º option: yes;
+- --- 3º option: node;
+- --- 4º option: no;
+- --- 5º option: v8;
+- --- 6º option: yes;
+- 17º command: `yarn add ts-jest -D`;
+- 18º command: `yarn add supertest @types/supertest -D`;
