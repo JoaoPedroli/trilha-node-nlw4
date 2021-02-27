@@ -34,4 +34,5 @@
 - 19º command: `yarn typeorm migration:create -n CreateSurveysUsers`;
 - 20º command: `yarn typeorm migration:run`;
 - 21º command: `yarn add nodemailer`;
-- 22º command: `yarn add handlebars`;
+- 22º command: `yarn add @types/nodemailer -D`;
+- 23º command: `yarn add handlebars`;
