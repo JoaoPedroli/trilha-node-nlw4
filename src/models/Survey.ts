@@ -5,7 +5,7 @@ import { v4 as uuid } from 'uuid';
 class Survey {
   /* define que ID é uma chave primária */
   @PrimaryColumn()
-  id: string;
+  readonly id: string;
 
   @Column(/* se os nomes forem diferentes colocar nome da coluna aqui | neste caso title === 'title' então não é necessário */)
   title: string;

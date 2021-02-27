@@ -29,3 +29,9 @@
 - --- 6º option: yes;
 - 17º command: `yarn add ts-jest -D`;
 - 18º command: `yarn add supertest @types/supertest -D`;
+
+### Aula 4
+- 19º command: `yarn typeorm migration:create -n CreateSurveysUsers`;
+- 20º command: `yarn typeorm migration:run`;
+- 21º command: `yarn add nodemailer`;
+- 22º command: `yarn add handlebars`;
